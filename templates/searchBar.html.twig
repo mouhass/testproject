@@ -1,0 +1,11 @@
+
+
+    <div class="well">
+        {{ form_start(form) }}
+
+        <div>{{ form_widget(form.numerocode) }}</div>
+
+        <br>
+        <button class="btn btn-primary">{{ button_label|default('Save') }}</button>
+        {{ form_end(form) }}
+    </div>

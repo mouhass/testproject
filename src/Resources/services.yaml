@@ -1,0 +1,21 @@
+services:
+  Batchjobs\ManageBatchJobsBundle\Controller\AdminController:
+    autoconfigure: true
+  Batchjobs\ManageBatchJobsBundle\Controller\DefaultController:
+    autoconfigure: true
+  Batchjobs\ManageBatchJobsBundle\Controller\handleLogout:
+    autoconfigure: true
+
+  Batchjobs\ManageBatchJobsBundle\Controller\HistoriqueController:
+    autoconfigure: true
+  Batchjobs\ManageBatchJobsBundle\Controller\HomeController:
+    autoconfigure: true
+
+  Batchjobs\ManageBatchJobsBundle\Controller\JobCompositeController:
+    autoconfigure: true
+  Batchjobs\ManageBatchJobsBundle\Controller\JobCronController:
+    autoconfigure: true
+  Batchjobs\ManageBatchJobsBundle\Controller\MailerController:
+    autoconfigure: true
+  Batchjobs\ManageBatchJobsBundle\Controller\SecurityController:
+    autoconfigure: true

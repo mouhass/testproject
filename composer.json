@@ -1,0 +1,78 @@
+{
+  "name": "batchjobs/bundlebatch",
+  "type": "symfony-bundle",
+  "description": "This bundle manages all batch jobs inside a symfony project",
+  "license": "proprietary",
+  "require": {
+    "php": ">=7.1.3",
+    "ext-ctype": "*",
+    "ext-iconv": "*",
+    "symfony/lts": "^4@dev",
+    "doctrine/doctrine-bundle": "^2.6",
+    "doctrine/doctrine-migrations-bundle": "^2.2",
+    "doctrine/orm": "^2.10",
+    "dragonmantank/cron-expression": "^3.3",
+    "knplabs/knp-paginator-bundle": "^5.8",
+    "panlatent/cron-expression-descriptor": "^1.1",
+    "sensio/framework-extra-bundle": "^6.2",
+    "symfony/asset": "4.4.*",
+    "symfony/console": "4.4.*",
+    "symfony/dotenv": "4.4.*",
+    "symfony/flex": "^1.3.1",
+    "symfony/form": "4.4.*",
+    "symfony/framework-bundle": "4.4.*",
+    "symfony/google-mailer": "4.4.*",
+    "symfony/mailer": "4.4.*",
+    "symfony/messenger": "4.4.*",
+    "symfony/monolog-bundle": "^3.7",
+    "symfony/process": "~4.1.0",
+    "symfony/proxy-manager-bridge": "4.4.*",
+    "symfony/security-bundle": "4.4.*",
+    "symfony/security-csrf": "4.4.*",
+    "symfony/twig-bundle": "4.4.*",
+    "symfony/validator": "4.4.*",
+    "symfony/yaml": "4.4.*",
+    "twig/twig": "^2.0"
+  },
+  "require-dev": {
+    "symfony/maker-bundle": "^1.38"
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/package-versions-deprecated": true,
+      "symfony/flex": true
+    },
+    "preferred-install": {
+      "*": "dist"
+    },
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Batchjobs\\ManageBatchJobsBundle\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Batchjobs\\ManageBatchJobsBundle\\Test\\": "tests/"
+    }
+  },
+  "replace": {
+    "paragonie/random_compat": "2.*",
+    "symfony/polyfill-ctype": "*",
+    "symfony/polyfill-iconv": "*",
+    "symfony/polyfill-php71": "*",
+    "symfony/polyfill-php70": "*",
+    "symfony/polyfill-php56": "*"
+  },
+
+  "conflict": {
+    "symfony/symfony": "*"
+  },
+  "extra": {
+    "symfony": {
+      "allow-contrib": false,
+      "require": "4.4.*"
+    }
+  }
+}

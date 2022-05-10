@@ -1,0 +1,23 @@
+
+<div class="row" style="margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px; ">
+
+    <div class="well">
+        {{ form_start(form) }}
+        <legend><i class="fa fa-lock" aria-hidden="true"></i> Nom du job cron</legend>
+        <div>{{ form_widget(form.name) }}</div>
+        <legend><i class="fa fa-lock" aria-hidden="true"></i> Expression</legend>
+        <div>{{ form_widget(form.expression) }}</div>
+        <legend><i class="fa fa-lock" aria-hidden="true"></i> Liste des destinataires </legend>
+        <div>{{ form_widget(form.listDestination) }}</div>
+        <legend><i class="fa fa-lock" aria-hidden="true"></i> Liste des sous jobs </legend>
+        <div>{{ form_widget(form.listSousJobs) }}</div>
+        <legend><i class="fa fa-lock" aria-hidden="true"></i> Le créateur </legend>
+        <div>{{ form_widget(form.createdBy) }}</div>
+
+        <br>
+        <button class="btn btn-primary">{{ button_label|default('Save') }}</button>
+        {{ form_end(form) }}
+    </div></div>

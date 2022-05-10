@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit JobCron{% endblock %}
+
+{% block body %}
+    <h1>Edit JobCron</h1>
+
+    {{ include('JobCron/_formEdit.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_jobCron_index') }}">back to list</a>
+
+{#    {{ include('admin/_delete_form.html.twig') }}#}
+{% endblock %}
